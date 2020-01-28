@@ -1,0 +1,530 @@
+/*Général*/
+
+body{
+    overflow: hidden;
+}
+
+#page{
+    height: 100vh;
+    width: 100vw;
+}
+
+/*id*/
+
+#titre-haut{
+    top: 280px;
+    left: 250px;
+    font-size: 85px;
+}
+
+#titre-milieu{
+    top: 370px;
+    left: 550px;
+    font-size: 50px;
+}
+
+#titre-bas{
+    top: 405px;
+    left: 660px;
+    font-size: 85px;
+}
+
+
+#myVideo {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    opacity: 0.6;
+}
+
+#data-rain {
+    position: relative;
+    object-fit: cover;
+    opacity: 0.3;
+    width: 270px;
+    height: 55vh;
+    right: 205px;
+    bottom: 45px;
+    z-index: 2;
+}
+
+#message{
+    background-color: azure;
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    padding: 20px;
+    font-family: "digitalix";
+    color: #9e0b0f;
+    z-index: 2;
+}
+
+#message p {
+    font-size: 12px;
+}
+
+#message textarea{
+    border-radius: 5px;
+    height: 15vh;
+    color: #9e0b0f;
+    font-size: 6px;
+    padding-left: 5px;
+}
+
+#message input{
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #9e0b0f;
+    font-size: 6px;
+    padding-left: 5px;
+}
+
+#activ{
+    text-decoration: none;
+    color: black;
+}
+
+#activ:hover{
+    color: purple;
+}
+
+#message #pitch {
+    font-size: 9px;
+}
+
+#correspondance{
+    font-size: 9px;
+    color: black;
+}
+
+#correspondance button{
+color: azure;
+}
+
+#bande {
+    position: relative;
+    height: 10vh;
+    bottom: 0px;
+}
+
+#pc{
+    position: absolute;
+    width: 50vw;
+    height: 90vh;
+    top: 30px;
+    left: 250px;
+    z-index: 1;
+}
+
+#statue {
+    display: none;
+}
+
+#hamburger{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+
+/*Class*/
+
+.titre-commun{
+    position: absolute;
+    color: #9e0b0f;
+    font-family: "Distortion Dos Analogue";
+    z-index: 3;
+    text-shadow: black 2px 2px;
+}
+
+
+.message-lien{
+    font-family: "digitalix";
+    color: #9e0b0f;
+    text-decoration: none;
+}
+
+.message-lien:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: purple;
+}
+
+
+.message-logo{
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.message-logo:hover{
+    text-decoration: none;
+    width: 30px;
+    height: 25px;
+}
+
+
+.switch{
+    display: none;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 1200px){
+    
+    /*id*/
+    
+    #titre-haut{
+        top: 280px;
+        left: 245px;
+        font-size: 80px;
+    }
+    
+    #titre-milieu{
+        top: 360px;
+        left: 505px;
+        font-size: 40px;
+    }
+    
+    #titre-bas{
+        top: 380px;
+        left: 600px;
+        font-size: 80px;
+    }
+    
+    #data-rain {
+        width: 240px;
+        height: 55vh;
+        right: 150px;
+        bottom: 42px;
+    }
+    
+    #message{
+        display: block;
+        width: 17vw;
+        padding: 15px;
+    }
+    
+    #message p {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    
+    #message textarea{
+        width: 12vw;
+        height: 12vh;
+        font-size: 5px;
+        padding-left: 3px;
+    }
+    
+    #message input{
+        width: 12vw;
+        height: 3vh;
+        margin: 1px;
+        font-size: 5px;
+        padding-left: 3px;
+    }
+    
+    #message #pitch {
+        font-size: 7px;
+    }
+    
+    #correspondance button, #correspondance p{
+        font-size: 7px;
+    }
+    
+    
+    
+    /*Class*/
+    
+    .message-logo{
+        width: 15px;
+        height: 10px;
+    }
+    
+    .message-logo:hover{
+        width: 20px;
+        height: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+
+    /*id*/
+
+    #titre-haut{
+        top: 260px;
+        left: 165px;
+        font-size: 75px;
+    }
+    
+    #titre-milieu{
+        top: 340px;
+        left: 425px;
+        font-size: 40px;
+    }
+    
+    #titre-bas{
+        top: 360px;
+        left: 520px;
+        font-size: 75px;
+    }
+    
+    #data-rain {
+        width: 240px;
+        height: 49vh;
+        right: 160px;
+        bottom: 42px;
+    }
+    
+    #message{
+        width: 19vw;
+        padding: 15px;
+    }
+    
+    #message p {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    
+    #message textarea{
+        width: 12vw;
+        height: 12vh;
+        font-size: 5px;
+        padding-left: 3px;
+    }
+    
+    #message input{
+        width: 12vw;
+        height: 3vh;
+        margin: 1px;
+        font-size: 5px;
+        padding-left: 3px;
+    }
+    
+    #message #pitch {
+        font-size: 7px;
+    }
+    
+    #correspondance button, #correspondance p{
+        font-size: 7px;
+    }
+
+    #pc{
+        width: 60vw;
+        height: 80vh;
+        top: 55px;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+/*id*/
+
+    #titre-haut{
+        top: 275px;
+        left: 105px;
+        font-size: 70px;
+    }
+    
+    #titre-milieu{
+        top: 340px;
+        left: 315px;
+        font-size: 40px;
+    }
+    
+    #titre-bas{
+        top: 365px;
+        left: 400px;
+        font-size: 70px;
+    }
+
+    #data-rain {
+        width: 215px;
+        height: 49vh;
+        right: 105px;
+        bottom: 45px;
+    }
+
+    #message{
+        width: 18vw;
+        padding: 15px;
+    }
+
+    #message p {
+        font-size: 6px;
+        margin-bottom: 10px;
+    }
+    
+    #message textarea{
+        width: 12vw;
+        height: 12vh;
+        font-size: 4px;
+        padding-left: 3px;
+    }
+    
+    #message input{
+        width: 12vw;
+        height: 3vh;
+        font-size: 4px;
+    }
+    
+    #message #pitch {
+        font-size: 4px;
+    }
+    
+    #correspondance button, #correspondance p{
+        font-size: 5px;
+        margin-bottom: 1px;
+    }
+    
+
+    #pc{
+        width: 70vw;
+        height: 80vh;
+        top: 55px;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+     /*id*/
+
+    #titre-haut{
+        top: 275px;
+        left: 50px;
+        font-size: 50px;
+    }
+    
+    #titre-milieu{
+        top: 320px;
+        left: 185px;
+        font-size: 30px;
+    }
+    
+    #titre-bas{
+        top: 345px;
+        left: 220px;
+        font-size: 50px;
+    }
+    
+    #statue{
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    #data-rain {
+        position: relative;
+        object-fit: cover;
+        opacity: 0.6;
+        width: 27vw;
+        height: 20vh;
+        left: 25px;
+        transform: rotate(20deg);
+        bottom: 220px;
+        z-index: 2;
+    }
+
+    #hamburger{
+        display: flex;
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+
+    #close{
+        display: flex;
+        position: absolute;
+        width: 5vw;
+        height: 5vh;
+        top: 25px;
+        right: 40px;
+        z-index: 1;
+    }
+
+
+    #pc{
+        display: none;
+    }
+
+    #message{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+        opacity: 0.9;
+    }
+
+    #message p {
+        font-size: 10px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+    #message #pitch{
+        font-size: 8px;
+        width: 50vw;
+    }
+
+    #message textarea{
+        width: 50vw;
+        font-size: 6px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    #message input{
+        width: 25vw;
+        font-size: 6px;
+        margin-left: 30px;
+    }
+
+    #message button{
+        margin-left: 30px;
+        font-size: 7px;
+    }
+
+    #correspondance{
+        width: 70vw;
+    }
+
+    #bande{
+        margin-left: 30px;
+    }
+
+    
+    /*Class*/
+
+    .titre-commun{
+        z-index: 2;
+    }
+
+    .message-logo{
+        width: 30px;
+        height: 25px;
+        margin-right: 20px;
+    }
+    
+    .message-logo:hover{
+        width: 35px;
+        height: 30px;
+    }
+
+}

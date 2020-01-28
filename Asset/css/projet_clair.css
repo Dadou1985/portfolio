@@ -1,0 +1,500 @@
+/*Tags*/
+
+h1{
+    position: absolute;
+    font-family: "Distortion Dos Analogue";
+    color: #9e0b0f;
+    font-size: 130px;
+    top: 300px;
+    left: 270px;
+    text-shadow: black 2px 2px;
+}
+
+
+
+/*id*/
+
+#page{
+    background-image: url("../img/cyberg3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: -100px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+#myVideo {
+    display: none;
+    object-fit: cover;
+    position: relative;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    opacity: 0.3;
+}
+
+#message{
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    right: 0px;
+    padding: 20px;
+    font-family: "digitalix";
+    color: #9e0b0f;
+    z-index: 2;
+    background-color: azure;
+}
+
+#message p {
+    font-size: 12px;
+}
+
+#message textarea{
+    border-radius: 5px;
+    height: 10vh;
+    color: #9e0b0f;
+    font-size: 6px;
+    padding-left: 5px;
+}
+
+#message input{
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #9e0b0f;
+    font-size: 6px;
+    padding-left: 5px;
+}
+
+#message #details {
+    font-size: 8px;
+}
+
+#message #details2 {
+    font-size: 8px;
+}
+
+#message #details3 {
+    font-size: 8px;
+}
+
+#correspondance{
+    color: black;
+}
+
+#correspondance button, #correspondance p{
+    font-size: 9px;
+}
+
+#bande {
+    position: relative;
+    height: 10vh;
+    bottom: 0px;
+}
+
+#hamburger{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+#cyberg, #blackCyberg, #tv, #light-screen {
+    display: none;
+}
+
+#hamburger{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+
+/*Class*/
+
+.message-activ{
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.message-activhov:hover{
+    color: purple;
+}
+
+.message-lien{
+    font-family: "digitalix";
+    color: #9e0b0f;
+    text-decoration: none;
+}
+
+.message-lien:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: purple;
+}
+
+
+.message-logo{
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.message-logo:hover{
+    text-decoration: none;
+    width: 30px;
+    height: 25px;
+}
+
+
+.switch{
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px){
+
+h1{
+    left: 300px;
+}
+
+/*id*/
+
+    #page{
+        background-position-x: -100px;
+    }
+
+    #message p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    #message textarea{
+        border-radius: 5px;
+        height: 10vh;
+        width: 180px;
+        color: #9e0b0f;
+        font-size: 6px;
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+    
+    #message input{
+        width: 180px;
+        margin: 5px;
+        border-radius: 5px;
+        color: #9e0b0f;
+        font-size: 6px;
+        padding-left: 5px;
+    }
+
+    #correspondance p{
+        font-size: 8px;
+        margin-bottom: 2px;
+    }
+
+    #correspondance button{
+        width: 160px;
+        margin-left: 20px;
+    }
+
+    #bande{
+        height: 25px;
+    }
+
+    #message #details {
+        font-size: 8px;
+    }
+    
+    #message #details2 {
+        font-size: 8px;
+    }
+    
+    #message #details3 {
+        font-size: 8px;
+    }
+
+    #cyberg, #blackCyberg, #tv, #light-screen {
+        display: none;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #close{
+        display: none;
+    }
+
+    /*Class*/
+
+    .message-activ{
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    h1{
+        left: 150px;
+    }
+
+    /*id*/
+
+    #message{
+        position: absolute;
+        width: 25vw;
+        height: 100vh;
+        right: 0px;
+        padding: 20px;
+        font-family: "digitalix";
+        color: #9e0b0f;
+        z-index: 2;
+        background-color: azure;
+    }
+
+    #message #details {
+        font-size: 5px;
+    }
+    
+    #message #details2 {
+        font-size: 5px;
+    }
+    
+    #message #details3 {
+        font-size: 5px;
+    }
+
+    #cyberg, #blackCyberg, #tv, #light-screen {
+        display: none;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #close{
+        display: none;
+    }
+
+    /*Class*/
+
+    .message-activ{
+        font-size: 7px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    h1{
+        top: 30px;
+        font-size: 70px;
+        left: 140px;
+    }
+
+/*id*/
+
+    #cyberg, #blackCyberg, #tv, #light-screen {
+        display: none;
+    }
+    
+    #hamburger{
+        display: none;
+    }
+
+    #close{
+        display: none;
+    }
+
+    #message{
+        top: 0px;
+        width: 26vw;
+        right: 0px;
+        height: 100vh;
+    }
+
+    #message p{
+        font-size: 8px;
+    }
+
+    #message textarea{
+        border-radius: 5px;
+        height: 10vh;
+        width: 130px;
+        color: #9e0b0f;
+        font-size: 6px;
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+    
+    #message input{
+        width: 130px;
+        margin: 5px;
+        border-radius: 5px;
+        color: #9e0b0f;
+        font-size: 6px;
+        padding-left: 5px;
+    }
+
+    #correspondance p{
+        font-size: 8px;
+        margin-bottom: 2px;
+    }
+
+    #correspondance button{
+        width: 130px;
+        margin-left: 5px;
+    }
+
+    #message #details {
+        font-size: 6px;
+    }
+    
+    #message #details2 {
+        font-size: 6px;
+    }
+    
+    #message #details3 {
+        font-size: 6px;
+    }
+
+    /*Class*/
+
+    .message-activ{
+        font-size: 6px;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+
+    h1{
+        font-size: 60px;
+        left: 70px;
+        top: 40px;
+    }
+
+/*id*/
+
+    #page{
+        background-image: none;
+    }
+
+    #cyberg{
+        display: flex;
+        position: absolute;
+        top: 170px;
+        width: 90vw;
+        height: 30vh;
+        border: 1px lightgrey solid;
+        border-radius: 3px;
+        box-shadow: grey 5px 5px;
+        opacity: 0.9;
+    }
+
+    #blackCyberg{
+        display: flex;
+        position: absolute;
+        bottom: 70px;
+        width: 90vw;
+        height: 30vh;
+        border: 1px lightgrey solid;
+        border-radius: 3px;
+        box-shadow: grey 5px 5px;
+        opacity: 0.8;
+    }
+
+    #light-screen{
+        display: flex;
+        position: absolute;
+        object-fit: cover;
+        width: 90vw;
+        height: 30vh;
+        opacity: 0.1;
+        top: 170px;
+    }
+
+    #tv{
+        display: flex;
+        position: absolute;
+        object-fit: cover;
+        width: 90vw;
+        height: 30vh;
+        bottom: 70px;
+    }
+    
+    #hamburger{
+        display: flex;
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+
+    #close{
+        display: flex;
+        position: absolute;
+        width: 5vw;
+        height: 5vh;
+        top: 25px;
+        right: 40px;
+        z-index: 1;
+    }
+
+    #message{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+        opacity: 0.9;
+    }
+
+    #message p {
+        font-size: 10px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+    #message #pitch{
+        font-size: 8px;
+        width: 50vw;
+    }
+
+    #message textarea{
+        width: 50vw;
+        font-size: 6px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    #message input{
+        width: 25vw;
+        font-size: 6px;
+        margin-left: 30px;
+    }
+
+    #message button{
+        margin-left: 30px;
+        font-size: 7px;
+    }
+
+    #correspondance{
+        width: 70vw;
+    }
+
+    #bande{
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,1180 @@
+/*Général*/
+
+body{
+    overflow: hidden;
+}
+
+#page{
+    height: 100vh;
+}
+
+
+/*Tags*/
+
+h1{
+    position: absolute;
+    font-family: "Distortion Dos Analogue";
+    color: #9e0b0f;
+    font-size: 100px;
+    top: 0px;
+    left: 230px;
+    text-shadow: black 2px 2px;
+}
+
+
+
+/*id*/
+
+#rubix{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 150px;
+    left: 370px;
+    z-index: 1;
+}
+
+#rubix2{
+    display: none;
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    top: 0px;
+    left: 230px;
+    z-index: 5;
+}
+
+
+#myVideo {
+    position: relative;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    opacity: 0.2;
+}
+
+#energy {
+    display: flex;
+    position: absolute;
+    opacity: 0.1;
+    width: 20vw;
+    height: auto;
+    left: 410px;
+    top: 250px;
+    transform: rotate(90deg);
+    border-radius: 40%;
+    z-index: 1;
+}
+
+#message{
+    display: block;
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    right: 0px;
+    padding: 20px;
+    font-family: "digitalix";
+    color: #9e0b0f;
+    background-color: azure;
+    z-index: 1;
+    top: 0px;
+}
+
+#message p {
+    font-size: 12px;
+}
+
+#message textarea{
+    border-radius: 5px;
+    width: 225px;
+    height: 15vh;
+    color: #9e0b0f;
+    font-size: 6px;
+    padding-left: 5px;
+}
+
+#message input{
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #9e0b0f;
+    font-size: 6px;
+    padding-left: 5px;
+}
+
+#message #details {
+    font-size: 8px;
+}
+
+#correspondance{
+    font-size: 9px;
+    color: black;
+}
+
+#correspondance button, #correspondance p{
+    font-size: 9px;
+}
+
+#bande {
+    position: relative;
+    height: 5vh;
+    bottom: 0px;
+}
+
+#gift{
+    position: absolute;
+    bottom: 0px;
+    left: 350px;
+}
+
+#gift2{
+    display: none;
+    position: absolute;
+    width: 650px;
+    height: 450px;
+    bottom: 0px;
+    left: 230px;
+    z-index: 5;
+    opacity: 0.4;
+}
+
+#skill_slide{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    padding: 20px;
+    font-family: "digitalix";
+    color: #9e0b0f;
+    background-color: azure;
+    z-index: 0;
+    opacity: 0;;
+    text-align: center;
+}
+
+#skill_slide img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+#hamburger{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+
+
+/*Rubix Skillz*/
+
+#sql{
+    top: 160px;
+    left: 545px;
+}
+
+#css{
+    top: 208px;
+    left: 598px;
+}
+
+#ajax{
+    top: 255px;
+    left: 650px;
+}
+
+#html{
+    top: 195px;
+    left: 495px;
+}
+
+#js{
+    top: 245px;
+    left: 550px;
+}
+
+#php{
+    top: 290px;
+    left: 605px;
+}
+
+#git{
+    top: 235px;
+    left: 395px;
+}
+
+#jquery{
+    top: 250px;
+    left: 445px;
+}
+
+#bootstrap{
+    top: 270px;
+    left: 495px;
+}
+
+#photoshop{
+    top: 315px;
+    left: 535px;
+}
+
+#agile{
+    top: 380px;
+    left: 550px;
+}
+
+#opquast{
+    top: 435px;
+    left: 565px;
+}
+
+#trust{
+    top: 325px;
+    left: 475px;
+}
+
+#créativité{
+    top: 305px;
+    left: 425px;
+}
+
+#ambition{
+    top: 285px;
+    left: 380px;
+}
+
+#communication{
+    top: 390px;
+    left: 495px;
+}
+
+#avenant{
+    top: 365px;
+    left: 445px;
+}
+
+#time_management{
+    top: 340px;
+    left: 400px;
+}
+
+#trouble_solver{
+    top: 440px;
+    left: 510px;
+}
+
+#stress_master{
+    top: 420px;
+    left: 460px;
+}
+
+#vision{
+    top: 395px;
+    left: 410px;
+}
+
+#motivation{
+    top: 345px;
+    left: 625px;
+}
+
+#proposition_joe{
+    top: 305px;
+    left: 675px;
+}
+
+#collectif{
+    top: 380px;
+    left: 615px;
+}
+
+#bitcoin{
+    top: 345px;
+    left: 655px;
+}
+
+#star{
+    top: 410px;
+    left: 605px;
+}
+
+#lannister{
+    top: 380px;
+    left: 640px;
+}
+
+
+
+/*Class*/
+
+.message-lien{
+    font-family: "digitalix";
+    color: #9e0b0f;
+    text-decoration: none;
+}
+
+.message-lien:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: purple;
+}
+
+
+.message-logo{
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.message-logo:hover{
+    text-decoration: none;
+    width: 30px;
+    height: 25px;
+}
+
+.cube{
+    position: absolute;
+    /*border: black 2px solid;
+    border-radius: 50px;*/
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    
+}
+
+.switch{
+    display: none;
+}
+
+.change{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+
+    /*Tags*/
+
+    h1{
+        font-size: 90px;
+        top: 0px;
+        left: 260px;
+    }
+
+    /*id*/
+
+    #message{
+        right: 0px;
+    }
+
+    #message p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    #message textarea{
+        border-radius: 5px;
+        height: 10vh;
+        width: 180px;
+        color: #9e0b0f;
+        font-size: 6px;
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+    
+    #message input{
+        width: 180px;
+        margin: 5px;
+        border-radius: 5px;
+        color: #9e0b0f;
+        font-size: 6px;
+        padding-left: 5px;
+    }
+
+
+    #correspondance p{
+        font-size: 8px;
+        margin-bottom: 2px;
+    }
+
+    #correspondance button{
+        width: 160px;
+        margin-left: 20px;
+    }
+
+    #bande{
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    /*Tags*/
+
+    h1{
+        font-size: 80px;
+        top: 0px;
+        left: 170px;
+    }
+
+    /*id*/
+
+    #rubix{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: 150px;
+        left: 250px;
+        z-index: 1;
+    }
+    
+    #rubix2{
+        display: none;
+        position: absolute;
+        width: 650px;
+        height: 650px;
+        top: 0px;
+        left: 110px;
+        z-index: 5;
+    }
+
+    #energy {
+        display: flex;
+        position: absolute;
+        opacity: 0.1;
+        width: 20vw;
+        height: auto;
+        left: 320px;
+        top: 250px;
+        transform: rotate(90deg);
+        border-radius: 40%;
+        z-index: 1;
+    }
+
+    #gift{
+        display: none;
+        position: absolute;
+        bottom: 0px;
+        left: 230px;
+    }
+    
+    #gift2{
+        display: none;
+        position: absolute;
+        width: 650px;
+        height: 450px;
+        bottom: 0px;
+        left: 110px;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    #message{
+        width: 19vw;
+        padding: 15px;
+    }
+    
+    #message p {
+        font-size: 9px;
+        margin-bottom: 5px;
+    }
+    
+    #message textarea{
+        width: 15vw;
+        height: 12vh;
+        font-size: 5px;
+        padding-left: 3px;
+    }
+    
+    #message input{
+        width: 15vw;
+        height: 3vh;
+        margin: 1px;
+        font-size: 5px;
+        padding-left: 3px;
+    }
+    
+    #correspondance button, #correspondance p{
+        font-size: 7px;
+    }
+
+    #correspondance button{
+        position: relative;
+        right: 20px;
+        width: 15vw;
+    }
+
+
+    /*Rubix Skillz*/
+
+    #sql{
+        top: 160px;
+        left: 425px;
+    }
+
+    #css{
+        top: 208px;
+        left: 478px;
+    }
+
+    #ajax{
+        top: 255px;
+        left: 530px;
+    }
+
+    #html{
+        top: 195px;
+        left: 375px;
+    }
+
+    #js{
+        top: 245px;
+        left: 430px;
+    }
+
+    #php{
+        top: 290px;
+        left: 485px;
+    }
+
+    #git{
+        top: 235px;
+        left: 275px;
+    }
+
+    #jquery{
+        top: 250px;
+        left: 325px;
+    }
+
+    #bootstrap{
+        top: 270px;
+        left: 375px;
+    }
+
+    #photoshop{
+        top: 315px;
+        left: 415px;
+    }
+
+    #agile{
+        top: 380px;
+        left: 430px;
+    }
+
+    #opquast{
+        top: 435px;
+        left: 445px;
+    }
+
+    #trust{
+        top: 325px;
+        left: 355px;
+    }
+
+    #créativité{
+        top: 305px;
+        left: 305px;
+    }
+
+    #ambition{
+        top: 285px;
+        left: 260px;
+    }
+
+    #communication{
+        top: 390px;
+        left: 375px;
+    }
+
+    #avenant{
+        top: 365px;
+        left: 325px;
+    }
+
+    #time_management{
+        top: 340px;
+        left: 280px;
+    }
+
+    #trouble_solver{
+        top: 440px;
+        left: 390px;
+    }
+
+    #stress_master{
+        top: 420px;
+        left: 340px;
+    }
+
+    #vision{
+        top: 395px;
+        left: 290px;
+    }
+
+    #motivation{
+        top: 345px;
+        left: 505px;
+    }
+
+    #proposition_joe{
+        top: 305px;
+        left: 555px;
+    }
+
+    #collectif{
+        top: 380px;
+        left: 495px;
+    }
+
+    #bitcoin{
+        top: 345px;
+        left: 535px;
+    }
+
+    #star{
+        top: 410px;
+        left: 485px;
+    }
+
+    #lannister{
+        top: 380px;
+        left: 520px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    /*Tags*/
+
+    h1{
+        font-size: 65px;
+        top: 0px;
+        left: 120px;
+    }
+
+    /*id*/
+
+    #rubix{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: 150px;
+        left: 150px;
+        z-index: 1;
+    }
+    
+    #rubix2{
+        display: none;
+        position: absolute;
+        width: 650px;
+        height: 650px;
+        top: 0px;
+        left: 10px;
+        z-index: 5;
+    }
+
+    #energy {
+        display: flex;
+        position: absolute;
+        opacity: 0.1;
+        width: 20vw;
+        height: auto;
+        left: 260px;
+        top: 250px;
+        transform: rotate(90deg);
+        border-radius: 40%;
+        z-index: 1;
+    }
+
+    #gift{
+        position: absolute;
+        bottom: 0px;
+        left: 130px;
+    }
+    
+    #gift2{
+        display: none;
+        position: absolute;
+        width: 650px;
+        height: 450px;
+        bottom: 0px;
+        left: 110px;
+        z-index: 5;
+        opacity: 0.4;
+    }
+
+    #message{
+        width: 25vw;
+        padding: 15px;
+    }
+    
+    #message p {
+        font-size: 9px;
+        margin-bottom: 5px;
+    }
+    
+    #message textarea{
+        width: 15vw;
+        height: 12vh;
+        font-size: 5px;
+        padding-left: 3px;
+    }
+    
+    #message input{
+        width: 15vw;
+        height: 3vh;
+        margin: 1px;
+        font-size: 5px;
+        padding-left: 3px;
+    }
+    
+    #correspondance button, #correspondance p{
+        font-size: 7px;
+    }
+
+    #correspondance button{
+        position: relative;
+        right: 20px;
+        width: 15vw;
+    }
+
+    #skill_slide{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        width: 25vw;
+        height: 100vh;
+        right: 0px;
+        top: 0px;
+        padding: 20px;
+        font-family: "digitalix";
+        color: #9e0b0f;
+        background-color: azure;
+        z-index: 0;
+        opacity: 0;;
+        text-align: center;
+    }
+    
+    #skill_slide img{
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /*Rubix Skillz*/
+
+    #sql{
+        top: 160px;
+        left: 325px;
+    }
+
+    #css{
+        top: 208px;
+        left: 378px;
+    }
+
+    #ajax{
+        top: 255px;
+        left: 430px;
+    }
+
+    #html{
+        top: 195px;
+        left: 275px;
+    }
+
+    #js{
+        top: 245px;
+        left: 330px;
+    }
+
+    #php{
+        top: 290px;
+        left: 385px;
+    }
+
+    #git{
+        top: 235px;
+        left: 175px;
+    }
+
+    #jquery{
+        top: 250px;
+        left: 225px;
+    }
+
+    #bootstrap{
+        top: 270px;
+        left: 275px;
+    }
+
+    #photoshop{
+        top: 315px;
+        left: 315px;
+    }
+
+    #agile{
+        top: 380px;
+        left: 330px;
+    }
+
+    #opquast{
+        top: 435px;
+        left: 345px;
+    }
+
+    #trust{
+        top: 325px;
+        left: 255px;
+    }
+
+    #créativité{
+        top: 305px;
+        left: 205px;
+    }
+
+    #ambition{
+        top: 285px;
+        left: 160px;
+    }
+
+    #communication{
+        top: 390px;
+        left: 275px;
+    }
+
+    #avenant{
+        top: 365px;
+        left: 225px;
+    }
+
+    #time_management{
+        top: 340px;
+        left: 180px;
+    }
+
+    #trouble_solver{
+        top: 440px;
+        left: 290px;
+    }
+
+    #stress_master{
+        top: 420px;
+        left: 240px;
+    }
+
+    #vision{
+        top: 395px;
+        left: 190px;
+    }
+
+    #motivation{
+        top: 345px;
+        left: 405px;
+    }
+
+    #proposition_joe{
+        top: 305px;
+        left: 455px;
+    }
+
+    #collectif{
+        top: 380px;
+        left: 395px;
+    }
+
+    #bitcoin{
+        top: 345px;
+        left: 435px;
+    }
+
+    #star{
+        top: 410px;
+        left: 385px;
+    }
+
+    #lannister{
+        top: 380px;
+        left: 420px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+     /*Tags*/
+
+     h1{
+        font-size: 55px;
+        top: 60px;
+        left: 20px;
+    }
+
+    #rubix{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: 230px;
+        left: 30px;
+        z-index: 1;
+    }
+    
+    #rubix2{
+        display: none;
+        position: absolute;
+        width: 650px;
+        height: 650px;
+        top: 80px;
+        right: 110px;
+        z-index: 5;
+    }
+
+    #energy {
+        display: flex;
+        position: absolute;
+        opacity: 0.1;
+        width: 20vw;
+        height: auto;
+        left: 180px;
+        top: 360px;
+        transform: rotate(90deg);
+        border-radius: 40%;
+        z-index: 1;
+    }
+
+    #gift{
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+        opacity: 0.7;
+    }
+
+    #gift2{
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        left: -120px;
+    }
+    
+    #hamburger{
+        display: flex;
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+
+    #close{
+        display: flex;
+        position: absolute;
+        width: 5vw;
+        height: 5vh;
+        top: 25px;
+        right: 40px;
+        z-index: 1;
+    }
+
+    #message{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        z-index: 4;
+        opacity: 0.9;
+    }
+
+    #message p {
+        font-size: 10px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+    #zapStory{
+        display: none;
+    }
+
+    #message #pitch{
+
+        
+        font-size: 8px;
+        width: 50vw;
+    }
+
+    #message textarea{
+        width: 50vw;
+        font-size: 6px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    #message input{
+        width: 25vw;
+        font-size: 6px;
+        margin-left: 30px;
+    }
+
+    #message button{
+        position: relative;
+        left: 20px;
+        font-size: 7px;
+        width: 25vw;
+    }
+
+    #correspondance{
+        width: 70vw;
+    }
+
+    #bande{
+        margin-left: 30px;
+    }
+
+    /*Rubix Skillz*/
+
+    #sql{
+        top: 240px;
+        left: 205px;
+    }
+
+    #css{
+        top: 288px;
+        left: 258px;
+    }
+
+    #ajax{
+        top: 335px;
+        left: 310px;
+    }
+
+    #html{
+        top: 275px;
+        left: 155px;
+    }
+
+    #js{
+        top: 325px;
+        left: 210px;
+    }
+
+    #php{
+        top: 370px;
+        left: 265px;
+    }
+
+    #git{
+        top: 315px;
+        left: 55px;
+    }
+
+    #jquery{
+        top: 330px;
+        left: 105px;
+    }
+
+    #bootstrap{
+        top: 350px;
+        left: 155px;
+    }
+
+    #photoshop{
+        top: 395px;
+        left: 195px;
+    }
+
+    #agile{
+        top: 460px;
+        left: 210px;
+    }
+
+    #opquast{
+        top: 515px;
+        left: 225px;
+    }
+
+    #trust{
+        top: 405px;
+        left: 135px;
+    }
+
+    #créativité{
+        top: 385px;
+        left: 85px;
+    }
+
+    #ambition{
+        top: 365px;
+        left: 40px;
+    }
+
+    #communication{
+        top: 470px;
+        left: 155px;
+    }
+
+    #avenant{
+        top: 445px;
+        left: 105px;
+    }
+
+    #time_management{
+        top: 420px;
+        left: 60px;
+    }
+
+    #trouble_solver{
+        top: 520px;
+        left: 170px;
+    }
+
+    #stress_master{
+        top: 500px;
+        left: 120px;
+    }
+
+    #vision{
+        top: 475px;
+        left: 70px;
+    }
+
+    #motivation{
+        top: 425px;
+        left: 285px;
+    }
+
+    #proposition_joe{
+        top: 385px;
+        left: 335px;
+    }
+
+    #collectif{
+        top: 460px;
+        left: 275px;
+    }
+
+    #bitcoin{
+        top: 425px;
+        left: 315px;
+    }
+
+    #star{
+        top: 490px;
+        left: 265px;
+    }
+
+    #lannister{
+        top: 460px;
+        left: 300px;
+    }
+}

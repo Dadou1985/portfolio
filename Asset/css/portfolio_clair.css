@@ -1,0 +1,611 @@
+/*Général*/
+
+header{
+    display: none;
+}
+
+#page{
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/*Tags*/
+
+h1{
+    position: absolute;
+    font-family: "Distortion Dos Analogue"; 
+    color: #9e0b0f;
+    font-size: 100px;
+    top: 0px;
+    left: 350px;
+    text-shadow: black 2px 2px;
+}
+
+#button{
+    position: absolute;
+    z-index: 5;
+    background-color: #3d3f3a;
+    bottom: 40px;
+    left: 850px;
+    width: 25px;
+    height: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px grey;
+}
+
+
+
+
+/*id*/
+
+
+#myVideo {
+    position: relative;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+  }
+
+#light-screen {
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.4;
+    width: 35vw;
+    height: 60vh;
+    left: 290px;
+    top: 200px;
+    z-index: 1;
+}
+
+#message{
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    right: 0px;
+    padding: 20px;
+    font-family: "digitalix";
+    color: #9e0b0f;;
+    bottom: 0px;
+    background-color: azure;
+}
+
+#message p {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+#message textarea{
+    border-radius: 5px;
+    height: 15vh;
+    color: #9e0b0f;
+    font-size: 6px;
+    padding-left: 5px;
+}
+
+#message input{
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #9e0b0f;
+    font-size: 6px;
+    padding-left: 5px;
+}
+
+#message #details {
+    font-size: 8px;
+}
+
+#details{
+    display: none;
+}
+
+#correspondance{
+    font-size: 9px;
+    color: black;
+}
+
+#correspondance button, #correspondance p{
+    font-size: 9px;
+}
+
+#bande {
+    position: relative;
+    height: 10vh;
+    bottom: 0px;
+}
+
+#tv{
+    position: absolute;
+    width: 50vw;
+    bottom: 0px;
+    left: 250px;
+    z-index: 4;
+}
+
+#back{
+    display: none;
+}
+
+#back2{
+    display: none;
+}
+
+#back3{
+    display: none;
+}
+
+#crossSight{
+    display: none;
+}
+
+#blackTv{
+    display: none;
+}
+
+#hamburger{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+/*Class*/
+
+.picture{
+    position: absolute;
+    width: 445px;
+    height: 345px;
+    opacity: 0.4;
+    top: 227px;
+    left: 308px;
+    z-index: 3;
+}
+
+.picture:hover{
+    opacity: 0.8;
+}
+
+.message-lien{
+    font-family: "digitalix";
+    color: #9e0b0f;
+    text-decoration: none;
+}
+
+.message-lien:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: purple;
+}
+
+
+.message-logo{
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.message-logo:hover{
+    text-decoration: none;
+    width: 30px;
+    height: 25px;
+}
+
+
+.switch{
+    display: none;
+}
+
+.change{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    /*Tags*/
+
+    h1{
+        font-size: 100px;
+        top: 0px;
+        left: 270px;
+    }
+
+    #button{
+        bottom: 35px;
+        left: 730px;
+    }
+
+    #tv{
+        left: 200px;
+    }
+
+    #myVideo {
+        position: relative;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+      }
+
+    #light-screen {
+        position: absolute;
+        object-fit: cover;
+        opacity: 0.4;
+        width: 35vw;
+        height: 55vh;
+        left: 240px;
+        top: 215px;
+        z-index: 1;
+    }
+
+    /*Class*/
+
+    .picture{
+        position: absolute;
+        width: 35vw;
+        height: 50vh;
+        opacity: 0.4;
+        top: 250px;
+        left: 235px;
+        z-index: 3;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){
+
+    h1{
+        font-size: 80px;
+        top: 50px;
+        left: 200px;
+    }
+
+    #myVideo {
+        position: relative;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+    }
+
+    #tv{
+        position: absolute;
+        width: 57vw;
+        bottom: 0px;
+        left: 120px;
+        z-index: 4;
+    }
+
+    #button{
+        bottom: 35px;
+        left: 630px;
+    }
+
+    #light-screen {
+        position: absolute;
+        object-fit: cover;
+        opacity: 0.4;
+        width: 45vw;
+        height: 47vh;
+        left: 150px;
+        top: 270px;
+        z-index: 1;
+    }
+
+    #message{
+        position: absolute;
+        width: 18vw;
+        height: 100vh;
+        right: 0px;
+        padding: 20px;
+        font-family: "digitalix";
+        color: #9e0b0f;;
+        bottom: 0px;
+        background-color: azure;
+    }
+    
+    #message p {
+        font-size: 8px;
+    }
+    
+    #message textarea{
+        border-radius: 5px;
+        height: 15vh;
+        width: 130px;
+        color: #9e0b0f;
+        font-size: 6px;
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+    
+    #message input{
+        width: 130px;
+        border-radius: 5px;
+        color: #9e0b0f;
+        font-size: 6px;
+        padding-left: 5px;
+    }
+    
+    #correspondance button, #correspondance p{
+        font-size: 6px;
+    }
+
+    #correspondance button{
+        width: 130px;
+        margin-left: 5px;
+    }
+    
+    #bande {
+        position: relative;
+        height: 7vh;
+        bottom: 0px;
+    }
+
+
+    /*Class*/
+
+    .picture{
+        width: 40vw;
+        height:47vh;
+        top: 270px;
+        left: 155px;
+    }
+
+    .message-logo{
+        width: 25px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    h1{
+        font-size: 70px;
+        top: 50px;
+        left: 130px;
+    }
+
+    #myVideo {
+        position: relative;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+    }
+
+    #tv{
+        position: absolute;
+        width: 70vw;
+        bottom: 20px;
+        left: 30px;
+        z-index: 4;
+    }
+
+    #button{
+        bottom: 50px;
+        left: 495px;
+        width: 25px;
+        height: 10px;
+    }
+
+    #light-screen {
+        left: 50px;
+        top: 240px;
+        width: 50vw;
+        height: 50vh;
+    }
+
+    #message{
+        width: 18vw;
+        padding: 15px;
+    }
+
+    #message p {
+        font-size: 6px;
+        margin-bottom: 10px;
+    }
+    
+    #message textarea{
+        width: 12vw;
+        height: 12vh;
+        font-size: 4px;
+        padding-left: 3px;
+    }
+    
+    #message input{
+        width: 12vw;
+        height: 3vh;
+        font-size: 4px;
+    }
+
+    #correspondance button, #correspondance p{
+        font-size: 5px;
+        margin-bottom: 1px;
+    }
+    
+
+
+    /*Class*/
+
+    .picture{
+        width: 47vw;
+        height:43vh;
+        top: 280px;
+        left: 70px;
+    }
+
+    .nav-lien{
+        left: 350px;
+        color: #9e0b0f;
+    }
+
+    .nav-lien:hover{
+        color: purple;
+    }
+
+    .intro2{
+        color: black;
+        margin-right: 60px;
+        margin-left: 20px;
+    }
+
+    .nav-logo{
+        width: 15px;
+        height: 10px;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+
+     /*id*/
+
+    #page{
+        background-color: azure;
+    }
+
+    h1{
+        top: 45px;
+        left: 70px;
+        font-size: 60px;
+    }
+
+    #tv{
+        display: none;
+    }
+
+    #light-screen {
+        position: absolute;
+        object-fit: cover;
+        opacity: 0.4;
+        width: 40vw;
+        height: 20vh;
+        left: 120px;
+        top: 200px;
+        transform: rotate(-3deg);
+        z-index: 0;
+    }
+
+    #crossSight{
+        display: flex;
+        position: absolute;
+        width: 95vw;
+        height: 50vh;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+    #blackTv{
+        display: flex;
+        position: absolute;
+        width: 55vw;
+        height: 25vh;
+        top: 195px;
+        left: 105px;
+        transform: rotate(-3deg);
+        z-index: 2;
+    }
+
+    #hamburger{
+        display: flex;
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+
+    #close{
+        display: flex;
+        position: absolute;
+        width: 5vw;
+        height: 5vh;
+        top: 25px;
+        right: 40px;
+        z-index: 1;
+    }
+
+    #message{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        z-index: 4;
+        opacity: 0.9;
+    }
+
+    #message p {
+        font-size: 10px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+    #zapStory{
+        display: none;
+    }
+
+    #message #pitch{
+        font-size: 8px;
+        width: 50vw;
+    }
+
+    #message textarea{
+        width: 50vw;
+        font-size: 6px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    #message input{
+        width: 25vw;
+        font-size: 6px;
+        margin-left: 30px;
+    }
+
+    #message button{
+        margin-left: 30px;
+        font-size: 7px;
+    }
+
+    #correspondance{
+        width: 70vw;
+    }
+
+    #bande{
+        margin-left: 30px;
+    }
+
+    #button{
+        display: none;
+    }
+
+    #back, #back2, #back3{
+        display: flex;
+        width: 40vw;
+        height: 18vh;
+        left: 120px;
+        top: 218px;
+        transform: rotate(-3deg);
+        opacity: 0.4;
+        z-index: 3;
+    }
+
+    
+    /*Class*/
+
+    .message-logo{
+        width: 30px;
+        height: 25px;
+        margin-right: 20px;
+    }
+    
+    .message-logo:hover{
+        width: 35px;
+        height: 30px;
+    }
+}
+
