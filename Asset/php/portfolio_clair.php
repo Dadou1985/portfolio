@@ -18,9 +18,6 @@
         </head>
         <body>
             <section id="page" class="d-flex justify-content-flex-start flex-column align-items-center">
-                <video autoplay muted loop id="myVideo">
-                    <source src="../img/cam.mp4" type="video/mp4">
-                </video>
                 <h1>Portfolio</h1>
                     <a href="#"><img src="../img/back.jpg" alt="" id="back" class="picture change"></a>
                     <a href="#"><img src="../img/back2.jpg" alt="" id="back2" class="picture change"></a>
@@ -49,6 +46,9 @@
                     </div>
                     <img src="../img/exit.svg" alt="" id="close">
                 </div>
+                <video autoplay muted loop id="myVideo">
+                    <source src="../img/cam.mp4" type="video/mp4">
+                </video>
                 <video autoplay muted loop id="light-screen">
                     <source src="../img/snow.mp4" type="video/mp4">
                 </video>

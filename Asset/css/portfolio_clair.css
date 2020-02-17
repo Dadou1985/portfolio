@@ -504,7 +504,7 @@ h1{
         position: absolute;
         width: 55vw;
         height: 25vh;
-        top: 195px;
+        top: 170px;
         left: 105px;
         transform: rotate(-3deg);
         z-index: 2;
@@ -588,7 +588,7 @@ h1{
         width: 40vw;
         height: 18vh;
         left: 120px;
-        top: 218px;
+        top: 187px;
         transform: rotate(-3deg);
         opacity: 0.4;
         z-index: 3;

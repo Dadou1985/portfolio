@@ -954,18 +954,11 @@ h1{
     }
 
     #gift{
-        display: flex;
-        position: absolute;
-        bottom: 0px;
-        left: 10px;
-        opacity: 0.7;
+        display: none;
     }
 
     #gift2{
-        display: flex;
-        position: absolute;
-        bottom: 0px;
-        left: -120px;
+        display: none;
     }
     
     #hamburger{

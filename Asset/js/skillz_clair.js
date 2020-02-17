@@ -68,6 +68,12 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     /*Rubix skillz script*/
 
+    function changeSkill(url, name, details){
+        this.url = url,
+        this.name = name,
+        this.details = details
+    }
+
     const agile = new changeSkill("../img/rubix/agile.png", "Agile", "Niveau Scrum Rookie")
     const creativite = new changeSkill("../img/rubix/ampoule.png", "Creativité",  "Niveau Da Vinci Style")
     const collectif = new changeSkill("../img/rubix/barca.png", "Collectif", "Niveau League des Champions")
@@ -97,12 +103,6 @@ document.addEventListener("DOMContentLoaded", function(event){
     const stressMaster = new changeSkill("../img/rubix/yin_yang.png", "Stress Master", "Niveau Maître Yoda")
 
     var tab = [sql, css, ajax, html, js, php, git, jquery, bootstrap, photoshop, agile, opquast, confiance, creativite, ambition, communication, loisir, time, skillz, stressMaster, chess, motivation, proposition, collectif, bitcoin, star, lannister]
-    
-    function changeSkill(url, name, details){
-        this.url = url,
-        this.name = name,
-        this.details = details
-    }
 
     const icon = byId("blaze")
     const slide = byId("skill_slide")

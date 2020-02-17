@@ -1,6 +1,6 @@
 <?php
       try{
-        $bdd = new PDO('mysql:host=localhost;dbname=contact_portfolio', 'david', 'antivirus');
+        $bdd = new PDO('mysql:host=localhost;dbname=contact_portfolio', 'daddou', 'Bec2gaz-2020-03!');
       }
       catch (Exception $e)
       {

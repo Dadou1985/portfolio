@@ -18,9 +18,6 @@
         </head>
         <body>
             <section id="page" class="d-flex justify-content-center flex-column align-items-center">
-                <video autoplay muted loop id="myVideo">
-                    <source src="../img/futur3.mp4" type="video/mp4">
-                </video>
                 <h1 id="titre-haut" class="titre-commun">Welcome</h1>
                 <h2 id="titre-milieu" class="titre-commun">to the</h2>
                 <h1 id="titre-bas" class="titre-commun">Future</h1>
@@ -50,6 +47,9 @@
                     </div>
                     <img src="../img/exit.svg" alt="" id="close">
                 </div>
+                <video autoplay muted loop id="myVideo">
+                    <source src="../img/futur3.mp4" type="video/mp4">
+                </video>
                 <video autoplay muted loop id="data-rain">
                     <source src="../img/snow3.mp4" type="video/mp4">
                 </video>

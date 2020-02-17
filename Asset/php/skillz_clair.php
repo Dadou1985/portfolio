@@ -16,9 +16,6 @@
         </head>
         <body>
             <section id="page" class="d-flex justify-content-flex-start flex-column align-items-center">
-                <video autoplay muted loop id="myVideo">
-                    <source src="../img/futur2.mp4" type="video/mp4">
-                </video>
                 <h1>Competences</h1>
                 <a href="#"><img src="../img/rubix skillz_3D.png" alt="" id="rubix"></a>
                 <img src="../img/rubix.png" alt="" id="rubix2">
@@ -47,6 +44,9 @@
                     </div>
                     <img src="../img/exit.svg" alt="" id="close">
                 </div>
+                <video autoplay muted loop id="myVideo">
+                    <source src="../img/futur2.mp4" type="video/mp4">
+                </video>
                 <video autoplay muted loop id="energy">
                     <source src="../img/energy.mp4" type="video/mp4">
                 </video>
