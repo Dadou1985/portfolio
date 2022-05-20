@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+a{
+  color: gray;
+  text-decoration: #aa852b;
+  cursor: pointer;
+}
+
+a:hover { color: black }
+
+a:active{ color: black }
+
+.main-container{
+  display: flex;
+  flex-flow: row;
+  margin: 3%;
+  background-image: url(../public/portfolio-face.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-color: whitesmoke;
+  height: 85vh;
+  filter: drop-shadow(10px 10px 10px);
+  animation: slidein 2s;
+  padding: 0% 2%;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.global-style-component{
+  margin-top: 0px;
+  animation: slidein 2s;
+  max-height: 100%;
+}
+
+.project-tab{animation: slidein 2s;}
+.messenger-list{animation: slidein 2s;}
+
+@keyframes slideup {
+  from {
+    margin-top: 1000px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+.shadow-level1{filter: drop-shadow(1px 1px 1px)}
+.downloadIcon:hover{color: gray}
