@@ -17,8 +17,8 @@ const Projet = ({language}) => {
   if(language === "en"){
     return (
       <div className="global-style-component">
-          <p style={{fontSize: "2rem", marginBottom: "-20px", marginLeft: "1%"}} className="shadow-level1 pitch">Smart work</p>
-          <h1 style={{fontSize: "6rem", marginTop: "0%", color:"#aa852b", borderBottom: "3px solid #aa852b", width: "90%", marginBottom: "0"}} className="shadow-level1">Hard work</h1>
+          <p style={{fontSize: "2rem", marginBottom: "-20px", marginLeft: "1%"}} className="shadow-level1 pitch">The magic behind</p>
+          <h1 style={{fontSize: "6rem", marginTop: "0%", color:"#aa852b", borderBottom: "3px solid #aa852b", width: "90%", marginBottom: "0"}} className="shadow-level1">The Code</h1>
           <p style={{width: "90%"}}>“Work until your bank account looks like a phone number.” — Unknown </p>
           <div>
             <p style={{color:"#aa852b", fontSize: "1.5rem"}}><b>My Sweet Hotel</b> - The masterpiece</p>
@@ -51,8 +51,8 @@ const Projet = ({language}) => {
   }else{
     return (
       <div className="global-style-component">
-          <p style={{fontSize: "2rem", marginBottom: "-20px", marginLeft: "1%"}} className="shadow-level1 pitch">De la sueur et</p>
-          <h1 style={{fontSize: "6rem", marginTop: "0%", color:"#aa852b", borderBottom: "3px solid #aa852b", width: "90%", marginBottom: "0"}} className="shadow-level1">Des Lignes</h1>
+          <p style={{fontSize: "2rem", marginBottom: "-20px", marginLeft: "1%"}} className="shadow-level1 pitch">La magie derrière</p>
+          <h1 style={{fontSize: "6rem", marginTop: "0%", color:"#aa852b", borderBottom: "3px solid #aa852b", width: "90%", marginBottom: "0"}} className="shadow-level1">Le Code</h1>
           <p style={{width: "90%"}}>“Bosse jusqu'à ce que ton compte en banque ressemble à un numéro de téléphone.” — Inconnu </p>
           <div>
             <p style={{color:"#aa852b", fontSize: "1.5rem"}}><b>My Sweet Hotel</b> - Le Chef d'Oeuvre</p>
