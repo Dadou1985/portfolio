@@ -10,37 +10,31 @@ const Contact = ({language}) => {
   
   return (
     <div className="global-style-component">
-        <h1 style={{fontSize: "6rem", marginTop: "0%", color:"#aa852b", borderBottom: "3px solid #aa852b", width: "90%", marginBottom: "0"}} className="shadow-level1">Contact</h1>
+        <h1 className="shadow-level1 big-title">Contact</h1>
         {language === "en" ? <p><i>“Talent wins games, but teamwork and intelligence win championships.” — Michael Jordan</i></p> : <p><i>“Le talent remporte des matchs, mais le travail en équipe et la statégie remportent des championnats.” — Michael Jordan</i></p>}
-        <div style={{paddingTop: "5vh", width: "100%"}}>
-          <div style={{marginBottom: "2vh", display: "flex", flexFlow: "row", alignItems: "center"}}>
-          <MdEmail style={{fontSize: "2rem", marginRight: "1vw"}} />
-          {!messengerList ? <a href='#' onClick={() => setMessengerList(!messengerList)} className="contact-text">david.simba1985@gmail.com</a>
-            : <div style={{
-              display: "flex", 
-              flexFlow: "row", 
-              justifyContent: "space-between",
-              alignItems: "center",
-              width: "20%"}}
-              className="messenger-list">
+        <div className='contact-container'>
+          <div className='mail-container'>
+          <MdEmail className='mail-icon' />
+          {!messengerList ? <a href='#' onClick={() => setMessengerList(!messengerList)}>david.simba1985@gmail.com</a>
+            : <div className="messenger-list messenger-container">
               <a href="https://mail.google.com/" target="_blank" onClick={() => setMessengerList (false)} rel="noreferrer">
-                <SiGmail style={{fontSize: "1.5rem"}} />
+                <SiGmail className='messenger-icon' />
               </a>
               <a href="https://office.live.com/start/Outlook.aspx?omkt=fr-001" target="_blank" onClick={() => setMessengerList (false)} rel="noreferrer" className="contact-text">
-                <SiMicrosoftoutlook style={{fontSize: "1.5rem"}} />
+                <SiMicrosoftoutlook className='messenger-icon' />
               </a>
               <a href={yahooMail} target="_blank" onClick={() => setMessengerList (false)} rel="noreferrer" className="contact-text">
-                <FaYahoo style={{fontSize: "1.5rem", borderRight: "1px solid gray", paddingRight: "1vw"}} />
+                <FaYahoo className='messenger-icon' style={{borderRight: "1px solid gray", paddingRight: "1vw"}} />
               </a>
-              <RiArrowGoBackFill  style={{fontSize: "1rem", backgroundColor: "#aa852b", cursor: "pointer", borderRadius: "50%", padding: "3%"}} onClick={() => setMessengerList(false)} />
+              <RiArrowGoBackFill className='messenger-back-icon' onClick={() => setMessengerList(false)} />
             </div>}
           </div>
-          <div style={{marginBottom: "2vh", display: "flex", flexFlow: "row", alignItems: "center"}}>
-            <FaLinkedinIn style={{fontSize: "2rem", marginRight: "1vw"}} />
+          <div className='other-container'>
+            <FaLinkedinIn className='other-icon' />
             <a href='https://www.linkedin.com/in/david-simba-961316140/' target="_blank" rel="noreferrer">David Simba - Linkedin</a>
           </div>
-          <div style={{marginBottom: "2vh", display: "flex", flexFlow: "row", alignItems: "center"}}>
-            <FaGithub style={{fontSize: "2rem", marginRight: "1vw"}} />
+          <div className='other-container'>
+            <FaGithub className='other-icon' />
             <a href='https://github.com/Dadou1985' target="_blank" rel="noreferrer">David Simba - Github</a>
           </div>
         </div>

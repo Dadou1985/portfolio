@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+body{overflow: hidden;}
 
 a{
   color: gray;
@@ -13,10 +14,10 @@ a:hover { color: black }
 
 a:active{ color: black }
 
-.main-container{
+.global-container{
   display: flex;
   flex-flow: row;
-  margin: 3%;
+  margin: 4%;
   background-image: url(../public/portfolio-face.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -44,6 +45,32 @@ a:active{ color: black }
   max-height: 100%;
 }
 
+.small-title{
+  font-size: 2rem;
+  margin-bottom: -20px;
+  margin-left: 1%;
+}
+
+.big-title{
+  font-size: 5.5rem; 
+  margin-top: 0%;
+  color:#aa852b; 
+  border-bottom: 3px solid #aa852b; 
+  width: 90%; 
+  margin-bottom: 0;
+}
+
+.main-content{
+    width: 90%;
+    margin-top: 3vh;
+    font-size: 1rem;;
+}
+
+.main-content-subtitle{
+  color: #aa852b;
+  font-size: 1.5rem;
+}
+
 .project-tab{animation: slidein 2s;}
 .messenger-list{animation: slidein 2s;}
 
@@ -60,4 +87,123 @@ a:active{ color: black }
 }
 
 .shadow-level1{filter: drop-shadow(1px 1px 1px)}
+
+
+
+/*===========Index style=========*/
+
+.left-side-container{
+  margin-top: 2%;
+  width: 50%;
+}
+
+.navbar-container{
+  display:flex;
+  align-items: center;
+}
+
+.navbar-container ul{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.main-container{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 80%;
+}
+
+
+/*===========Parcours style=========*/
+
+.bottom-container{
+  display: flex;
+  width:80%;
+  flex-flow: column;
+  align-items: center;
+}
+
+.bottom-container ul{
+  display: flex;
+  flex-flow: row;
+  width: 80%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.downloadIcon{
+  font-size: 3rem;
+  cursor: pointer;
+}
+
 .downloadIcon:hover{color: gray}
+
+
+/*===========Parcours style=========*/
+
+.icon-container{
+  display: flex;
+  flex-flow: row;
+  width: 80%;
+  justify-content: space-around;
+  margin-bottom: 2%;
+  font-size: 1.5rem;
+}
+
+.project-icon{
+  cursor: pointer;
+  padding-bottom: 1%;
+}
+
+
+/*===========Parcours style=========*/
+
+.contact-container{
+  padding-top: 5vh;
+  width: 100%;
+}
+
+.mail-container{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.mail-icon{
+  font-size: 2rem;
+  margin-right: 1vw;
+}
+
+.messenger-container{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+.messenger-icon{font-size: 1.5rem;}
+
+.messenger-back-icon{
+  font-size: 1rem;
+  background-color: #aa852b;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 3%;
+}
+
+.other-container{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.other-icon{
+  font-size: 2rem;
+  margin-right: 1vw;
+}

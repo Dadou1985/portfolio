@@ -17,21 +17,14 @@ const Projet = ({language}) => {
   if(language === "en"){
     return (
       <div className="global-style-component">
-          <p style={{fontSize: "2rem", marginBottom: "-20px", marginLeft: "1%"}} className="shadow-level1 pitch">The magic behind</p>
-          <h1 style={{fontSize: "6rem", marginTop: "0%", color:"#aa852b", borderBottom: "3px solid #aa852b", width: "90%", marginBottom: "0"}} className="shadow-level1">The Code</h1>
-          <p style={{width: "90%"}}>“Work until your bank account looks like a phone number.” — Unknown </p>
+          <p className="shadow-level1 small-title">The magic behind</p>
+          <h1 className="shadow-level1 big-title">The Code</h1>
+          <p>“Work until your bank account looks like a phone number.” — Unknown </p>
           <div>
-            <p style={{color:"#aa852b", fontSize: "1.5rem"}}><b>My Sweet Hotel</b> - The masterpiece</p>
-              <div style={{
-                display: "flex",
-                flexFlow: "row",
-                width: "80%",
-                justifyContent: 'space-around',
-                marginBottom: "2%",
-                fontSize: "1.5rem",
-              }}>
-                <FaVideo style={{borderBottom: video ? "1px solid black" : "none", cursor: "pointer", paddingBottom: "1%"}} onClick={() => handleTabActivation(true, false)} />
-                <FaInfoCircle style={{borderBottom: text ? "1px solid black" : "none", cursor: "pointer", paddingBottom: "1%"}} onClick={() => handleTabActivation(false, true)} />
+            <p className='main-content-subtitle'><b>My Sweet Hotel</b> - The masterpiece</p>
+              <div className='icon-container'>
+                <FaVideo style={{borderBottom: video ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(true, false)} />
+                <FaInfoCircle style={{borderBottom: text ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(false, true)} />
               </div>
               {video && <ReactPlayer url='https://youtu.be/HWVkct0n6Zs' className='project-tab' />}
               {text && <ScrollBar className='project-tab'>
@@ -51,21 +44,14 @@ const Projet = ({language}) => {
   }else{
     return (
       <div className="global-style-component">
-          <p style={{fontSize: "2rem", marginBottom: "-20px", marginLeft: "1%"}} className="shadow-level1 pitch">La magie derrière</p>
-          <h1 style={{fontSize: "6rem", marginTop: "0%", color:"#aa852b", borderBottom: "3px solid #aa852b", width: "90%", marginBottom: "0"}} className="shadow-level1">Le Code</h1>
-          <p style={{width: "90%"}}>“Bosse jusqu'à ce que ton compte en banque ressemble à un numéro de téléphone.” — Inconnu </p>
+          <p className="shadow-level1 small-title">La magie derrière</p>
+          <h1 className="shadow-level1 big-title">Le Code</h1>
+          <p>“Bosse jusqu'à ce que ton compte en banque ressemble à un numéro de téléphone.” — Inconnu </p>
           <div>
-            <p style={{color:"#aa852b", fontSize: "1.5rem"}}><b>My Sweet Hotel</b> - Le Chef d'Oeuvre</p>
-              <div style={{
-                display: "flex",
-                flexFlow: "row",
-                width: "80%",
-                justifyContent: 'space-around',
-                marginBottom: "2%",
-                fontSize: "1.5rem",
-              }}>
-                <FaVideo style={{borderBottom: video ? "1px solid black" : "none", cursor: "pointer", paddingBottom: "1%"}} onClick={() => handleTabActivation(true, false)} />
-                <FaInfoCircle style={{borderBottom: text ? "1px solid black" : "none", cursor: "pointer", paddingBottom: "1%"}} onClick={() => handleTabActivation(false, true)} />
+            <p className='main-content-subtitle'><b>My Sweet Hotel</b> - Le Chef d'Oeuvre</p>
+            <div className='icon-container'>
+                <FaVideo style={{borderBottom: video ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(true, false)} />
+                <FaInfoCircle style={{borderBottom: text ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(false, true)} />
               </div>
               {video && <ReactPlayer url='https://youtu.be/HWVkct0n6Zs' className='project-tab' />}
               {text && <ScrollBar className='project-tab'>

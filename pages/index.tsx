@@ -28,25 +28,20 @@ const Index = () => {
   }
   
   return (
-    <div className="main-container">
-        <div style={{marginTop: "2%", width: "50%"}}>
-            <div style={{display: "flex", alignItems: "center"}}>
+    <div className="global-container">
+        <div className='left-side-container'>
+            <div className='navbar-container'>
                 <div>
                   <a href="#" className="nav-item" style={{color: language === "en" ? "black" : "gray"}} onClick={() => setLanguage("en")}>EN</a> | <a href="#" className="nav-item" style={{color: language === "fr" ? "black" : "gray"}} onClick={() => setLanguage("fr")}>FR</a>
                 </div>
-                <ul style={{
-                  listStyleType: "none", 
-                  display: "flex", 
-                  width: "50%", 
-                  justifyContent: "space-around",
-                  }}>
+                <ul>
                       <a href="#" className="nav-item" style={{borderBottom: child === "profil" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("profil")}>{language === "en" ? "The pitch": "Le Pitch"}</li></a>
                       <a href="#" className="nav-item" style={{borderBottom: child === "parcours" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("parcours")}>{language === "en" ? "The Geek": "Le Geek"}</li></a>
                       <a href="#" className="nav-item" style={{borderBottom: child === "projet" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("projet")}>{language === "en" ? "The Code": "Le Code"}</li></a>
                       <a href="#" className="nav-item" style={{borderBottom: child === "contact" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("contact")}>Contact</li></a>
                 </ul>
             </div>
-            <main style={{height: "80%", display: "flex", flexFlow: "column", justifyContent: "center"}}>
+            <main className='main-container'>
               {handleNavigation()}
             </main>
         </div>
