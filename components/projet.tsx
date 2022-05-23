@@ -13,22 +13,28 @@ const Projet = ({language}) => {
     setVideo(videoStatus)
     setText(textStatus)
   }
+
+  const windowSize = window.innerWidth
+
   
   if(language === "en"){
     return (
       <div className="global-style-component">
           <p className="shadow-level1 small-title">The magic behind</p>
           <h1 className="shadow-level1 big-title">The Code</h1>
-          <p>“Work until your bank account looks like a phone number.” — Unknown </p>
+          <p className='main-quote'>“Work until your bank account looks like a phone number.” — Unknown </p>
           <div>
             <p className='main-content-subtitle'><b>My Sweet Hotel</b> - The masterpiece</p>
               <div className='icon-container'>
                 <FaVideo style={{borderBottom: video ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(true, false)} />
                 <FaInfoCircle style={{borderBottom: text ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(false, true)} />
               </div>
-              {video && <ReactPlayer url='https://youtu.be/HWVkct0n6Zs' className='project-tab' />}
-              {text && <ScrollBar className='project-tab'>
-                <p>Being a former worker of the hotel industry, I created this digital solution to help hotel owners modernizing the management of their hotel.
+              {video && windowSize < 480 ? <div style={{display: video ? "flex" : "none", flexFlow: "row", justifyContent: "center", marginTop: "5vh"}}>
+                <ReactPlayer url='https://youtu.be/HWVkct0n6Zs' className='project-tab' width="300px" height="200px" />
+              </div> :
+              <div style={{display: video ? "flex" : "none"}}><ReactPlayer url='https://youtu.be/HWVkct0n6Zs' className='project-tab' /></div>}
+              {text && <div style={{overflow: 'scroll', backgroundColor: "white"}}><ScrollBar className='project-tab' style={{maxHeight: "40vh"}}>
+                <p>As a former worker of the hotel industry, I created this digital solution to help hotel owners modernizing the management of their hotel.
                   <br/>The solution is the combination of a web application staff-oriented and a mobile application customer-oriented.
                   <br/>I've been working on it for 2 years and I can say, by far, that this project is my masterpiece. 
                   <br/>I code it from scratch as a full-stack developper,
@@ -37,7 +43,7 @@ const Projet = ({language}) => {
                   <br/>The back-end side was developed threw the Google's Back-end-As-A-Service {`(Firebase)`}.
                   <br/><br/>For more details on this project, <a href='https://mysweethotel.com/' target='_blank' rel="noreferrer">visit the website</a>.
                 </p>
-              </ScrollBar>}
+              </ScrollBar></div>}
           </div>
       </div>
     )
@@ -46,15 +52,18 @@ const Projet = ({language}) => {
       <div className="global-style-component">
           <p className="shadow-level1 small-title">La magie derrière</p>
           <h1 className="shadow-level1 big-title">Le Code</h1>
-          <p>“Bosse jusqu'à ce que ton compte en banque ressemble à un numéro de téléphone.” — Inconnu </p>
+          <p className='main-quote'>“Bosse jusqu'à ce que ton compte en banque ressemble à un numéro de téléphone.” — Inconnu </p>
           <div>
             <p className='main-content-subtitle'><b>My Sweet Hotel</b> - Le Chef d'Oeuvre</p>
             <div className='icon-container'>
                 <FaVideo style={{borderBottom: video ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(true, false)} />
                 <FaInfoCircle style={{borderBottom: text ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(false, true)} />
               </div>
-              {video && <ReactPlayer url='https://youtu.be/HWVkct0n6Zs' className='project-tab' />}
-              {text && <ScrollBar className='project-tab'>
+              {video && windowSize < 480 ? <div style={{display: video ? "flex" : "none", flexFlow: "row", justifyContent: "center", marginTop: "5vh"}}>
+                <ReactPlayer url='https://youtu.be/HWVkct0n6Zs' className='project-tab' width="300px" height="200px" />
+              </div> :
+              <div style={{display: video ? "flex" : "none"}}><ReactPlayer url='https://youtu.be/HWVkct0n6Zs' className='project-tab' /></div>}
+              {text && <div style={{overflow: 'scroll', backgroundColor: "white"}}><ScrollBar className='project-tab' style={{maxHeight: "40vh"}}>
                 <p>Etant moi-même issu du milieu hôtelier, j'ai créé une solution digitale permettant de simplifier et modernisez la gestion d'un hôtel.
                   <br/>Le produit se compose d'une application web orientée collaborateur et d'une application mobile orientée client.
                   <br/>Cela fait près de 2 ans que travaille sur ce que je considère être mon projet chef d'oeuvre. 
@@ -64,7 +73,7 @@ const Projet = ({language}) => {
                   <br/>Le côté <i>back</i> a été développé sur le Back-end-As-A-Service de Google {`(Firebase)`}.
                   <br/><br/>Pour plus de détails sur le projet, rendez-vous sur le site officiel de <a href='https://mysweethotel.com/' target='_blank' rel="noreferrer" style={{color:"#aa852b"}}>My Sweet Hotel</a>.
                 </p>
-              </ScrollBar>}
+              </ScrollBar></div>}
           </div>
       </div>
     )

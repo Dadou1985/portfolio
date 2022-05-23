@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{overflow: hidden;}
+body{
+  overflow: hidden;
+  padding: 0%;
+  margin: 0%;
+}
 
 a{
   color: gray;
@@ -25,11 +29,11 @@ a:active{ color: black }
   background-color: whitesmoke;
   height: 85vh;
   filter: drop-shadow(10px 10px 10px);
-  animation: slidein 2s;
+  animation: fadein 2s;
   padding: 0% 2%;
 }
 
-@keyframes slidein {
+@keyframes fadein {
   from {
     opacity: 0;
   }
@@ -41,9 +45,11 @@ a:active{ color: black }
 
 .global-style-component{
   margin-top: 0px;
-  animation: slidein 2s;
+  animation: fadein 2s;
   max-height: 100%;
 }
+
+.navbar{display: none;}
 
 .small-title{
   font-size: 2rem;
@@ -63,7 +69,8 @@ a:active{ color: black }
 .main-content{
     width: 90%;
     margin-top: 3vh;
-    font-size: 1rem;;
+    font-size: 1rem;
+    overflow: auto;
 }
 
 .main-content-subtitle{
@@ -71,23 +78,79 @@ a:active{ color: black }
   font-size: 1.5rem;
 }
 
-.project-tab{animation: slidein 2s;}
-.messenger-list{animation: slidein 2s;}
+.project-tab{animation: fadein 2s;}
+.messenger-list{animation: fadein 2s;}
+.drawer{
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+}
 
-@keyframes slideup {
+.perfect-scrollbar{animation: fadein 1s;}
+
+@keyframes slideInLeft {
   from {
-    margin-top: 1000px;
+    left: -1000px;
     opacity: 0;
   }
 
   to {
-    margin-top: 0px;
+    left: 0px;
     opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    left: 0px;
+    opacity: 1;
+  }
+
+  to {
+    left: -1000px;
+    opacity: 0;
   }
 }
 
 .shadow-level1{filter: drop-shadow(1px 1px 1px)}
 
+
+@media screen and (max-width: 480px) {
+  .global-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-position-y: bottom;
+    padding: 0% 0%;
+    margin: 0%;
+    filter: none;
+  }
+  
+  .small-title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+    width: 100%;
+  }
+
+  .big-title{
+    text-align: center;
+    font-size: 5.5rem;
+    width: 100%;
+    line-height: 80%;
+  }
+
+  .main-content-subtitle{
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .main-content{width: 100%}
+
+  .global-style-component{padding-top: 10vh;}
+
+  .main-quote{text-align: center;}
+
+}
 
 
 /*===========Index style=========*/
@@ -117,6 +180,22 @@ a:active{ color: black }
 }
 
 
+@media screen and (max-width: 480px) {
+  .left-side-container{
+    width: 100%;
+    padding: 0% 5% 0% 5%;
+  }
+  .navbar-container{justify-content: space-between;}
+  .navbar-container ul{display: none;}
+  .quotes{display: none;}
+  .main-container{justify-content: flex-start;}
+  .nav-item{
+    font-size: large;
+    margin-bottom: 1vh;
+  }
+}
+
+
 /*===========Parcours style=========*/
 
 .bottom-container{
@@ -142,7 +221,19 @@ a:active{ color: black }
 .downloadIcon:hover{color: gray}
 
 
-/*===========Parcours style=========*/
+@media screen and (max-width: 480px) {
+  .bottom-container{
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+  }
+  .bottom-container ul{width: 100%;}
+  
+}
+
+
+
+/*===========Projet style=========*/
 
 .icon-container{
   display: flex;
@@ -159,7 +250,16 @@ a:active{ color: black }
 }
 
 
-/*===========Parcours style=========*/
+
+@media screen and (max-width: 480px) {
+  .icon-container{
+    width: 100%;
+    margin-top: 2vh;
+  }
+}
+
+
+/*===========Contact style=========*/
 
 .contact-container{
   padding-top: 5vh;
@@ -207,3 +307,4 @@ a:active{ color: black }
   font-size: 2rem;
   margin-right: 1vw;
 }
+
