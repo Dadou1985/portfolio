@@ -46,7 +46,7 @@ const Index = () => {
     <div className="global-container">
         <div className='left-side-container'>
             <div className='navbar-container'>
-                <GiHamburgerMenu id="hamburger" onClick={() => {
+                <GiHamburgerMenu className="hamburger" onClick={() => {
                   setDrawer(true)
                   handleShowSlideBar("slideInLeft")
                   }} />

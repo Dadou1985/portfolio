@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedinIn, FaYahoo } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { SiGmail, SiMicrosoftoutlook } from 'react-icons/si'
 import { RiArrowGoBackFill } from 'react-icons/ri'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 
 const Contact = ({language}) => {
   const [messengerList, setMessengerList] = useState(false)
@@ -36,6 +37,10 @@ const Contact = ({language}) => {
           <div className='other-container'>
             <FaGithub className='other-icon' />
             <a href='https://github.com/Dadou1985' target="_blank" rel="noreferrer">David Simba - Github</a>
+          </div>
+          <div className='other-container'>
+            <BsFillTelephoneFill className='other-icon' />
+            <a href='#'>06.59.87.28.84</a>
           </div>
         </div>
     </div>

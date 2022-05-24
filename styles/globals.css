@@ -66,6 +66,15 @@ a:active{ color: black }
   margin-bottom: 0;
 }
 
+.profile-big-title{
+  font-size: 5.5rem; 
+  margin-top: 0%;
+  color:#aa852b; 
+  border-bottom: 3px solid #aa852b; 
+  width: 90%; 
+  margin-bottom: 0;
+}
+
 .main-content{
     width: 90%;
     margin-top: 3vh;
@@ -139,6 +148,13 @@ a:active{ color: black }
     line-height: 80%;
   }
 
+  .profile-big-title{
+    text-align: center;
+    font-size: 6.5rem;
+    width: 100%;
+    line-height: 80%;
+  }
+
   .main-content-subtitle{
     text-align: center;
     margin-bottom: 0;
@@ -179,6 +195,8 @@ a:active{ color: black }
   height: 80%;
 }
 
+.hamburger{display: none;}
+
 
 @media screen and (max-width: 480px) {
   .left-side-container{
@@ -193,6 +211,8 @@ a:active{ color: black }
     font-size: large;
     margin-bottom: 1vh;
   }
+
+  .hamburger{display: flex;}
 }
 
 
