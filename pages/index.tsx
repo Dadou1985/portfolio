@@ -7,15 +7,14 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { FaGithub, FaLinkedinIn, FaYahoo } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { SiGmail, SiMicrosoftoutlook } from 'react-icons/si'
-import { RiArrowGoBackFill } from 'react-icons/ri'
-import { BsFillTelephoneFill, BsBackspaceFill } from 'react-icons/bs'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import { AiFillCloseSquare } from "react-icons/ai"
 
 const Index = () => {
   const [child, setChild] = useState("profil")
   const [language, setLanguage] = useState("en")
   const [drawer, setDrawer] = useState(false)
-  const [messengerList, setMessengerList] = useState(true)
+  const [messengerList, setMessengerList] = useState(false)
   const [showPhoneNumber, setShowPhoneNumber] = useState(false)
   const yahooMail = "https://login.yahoo.com/?.src=ym&lang=fr-FR&done=https%3A%2F%2Fmail.yahoo.com%2F%3Fguce_referrer%3DaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%26guce_referrer_sig%3DAQAAAH3vSMEHhMKXJf7BLsfGhIkgkpKc1EhAcvmlY15Sl8vsr9cfM6wU0sthzq_UFmhRMj0PWdYD0PTKePsAW5g6lMoDK_zqLOLFJ95bO1mBMXFKiI26oHw9ll98kS3gkVcSlRPOfpYCr0RVRmrNB1Tz_HK03azlk29credL6w4hPjAz"
 

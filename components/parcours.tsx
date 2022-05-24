@@ -23,7 +23,9 @@ const Parcours = ({language}) => {
                 <div className='main-content'>
                     <h2 className='main-content-subtitle'>Allow me to introduce myself</h2>
                     {windowSize < 480 ? <div style={{overflow: "scroll"}}>
-                        {fullText ? <PerfectScrollbar className='perfect-scrollbar' style={{maxHeight: "65vh", textAlign: "center", backgroundColor: "white"}}>
+                        {fullText ? <div className='modal-story-container'>
+                        <PerfectScrollbar style={{maxHeight: "100vh"}}>
+                            <h2 className='main-content-subtitle'>Allow me to introduce myself</h2>
                             <p>Hi, my name is David SIMBA and I have got super powers but... let's keep it just between me and you, ok !
                                 <br/>What, you don't believe me ?
                                 <br/>Fine ! Let me show you that I'm telling the truth.
@@ -49,7 +51,8 @@ const Parcours = ({language}) => {
                                 <FaFileDownload className="downloadIcon" onClick={downloadCv} />
                             </div>
                             <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => setFullText(false)}>Show less</a></p>
-                        </PerfectScrollbar> : <p style={{width: "90%", textAlign: "end"}}><a href="#" onClick={() => setFullText(true)}>Read more</a></p>}
+                        </PerfectScrollbar>
+                        </div> : <p style={{width: "90%", textAlign: "end"}}><a href="#" onClick={() => setFullText(true)}>Read more</a></p>}
                     </div> : <div>
                     <p>Hi, my name is David SIMBA and I have got super powers but... let's keep it just between me and you, ok !
                                 <br/>What, you don't believe me ?
@@ -88,7 +91,9 @@ const Parcours = ({language}) => {
                 <div className='main-content'>
                     <h2 className='main-content-subtitle'>Permettez-moi de me présenter</h2>
                     {windowSize < 480 ? <div style={{overflow: "scroll"}}>
-                        {fullText ? <PerfectScrollbar style={{maxHeight: "70vh", textAlign: "center", backgroundColor: "white"}}>
+                        {fullText ? <div className='modal-story-container'>
+                            <PerfectScrollbar style={{maxHeight: "100vh"}}>
+                            <h2 className='main-content-subtitle'>Permettez-moi de me présenter</h2>
                                 <p>Salut, je m'appelle David SIMBA et j'ai des super-pouvoirs mais... ça reste entre nous, ok !
                                 <br/>Quoi, tu ne me crois pas ?
                                 <br/>Très bien ! Laisse-moi te prouver que je ne raconte pas des histoires.
@@ -114,7 +119,8 @@ const Parcours = ({language}) => {
                                 <FaFileDownload className="downloadIcon" onClick={downloadCv} />
                                 <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => setFullText(false)}>Lire moins</a></p>
                             </div>
-                        </PerfectScrollbar> : <p style={{width: "90%", textAlign: "end"}}><a href="#" onClick={() => setFullText(true)}>Lire plus</a></p>}
+                            </PerfectScrollbar>
+                        </div> : <p style={{width: "90%", textAlign: "end"}}><a href="#" onClick={() => setFullText(true)}>Lire plus</a></p>}
                     </div> : <div>
                         <p>Salut, je m'appelle David SIMBA et j'ai des super-pouvoirs mais... ça reste entre nous, ok !
                             <br/>Quoi, tu ne me crois pas ?

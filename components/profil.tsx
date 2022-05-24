@@ -17,7 +17,7 @@ const Profil = ({language}) => {
     return (
       <div className="global-style-component">
           <p className="shadow-level1 small-title">Je ne suis pas un développeur</p>
-          <h1 className="shadow-level1 big-title">Je suis un  <br/> Faiseur de Miracles</h1>
+          <h1 className="shadow-level1 profile-big-title2">Je suis un  <br/> Faiseur de Miracles</h1>
           <p className='main-quote'><i>“Le succès vient généralement à ceux qui sont trop occupés à le chercher.” — Henry David Thoreau</i></p>
           <p className='quotes'><i>“Je n'ai jamais rêvé de succès. J'ai travaillé pour.” — Estée Lauder</i></p>
           <p className='quotes'><i>“Rien ne peut m'arrêter, je suis tout en haut.” — Fat Joe</i></p>

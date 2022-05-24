@@ -75,6 +75,15 @@ a:active{ color: black }
   margin-bottom: 0;
 }
 
+.profile-big-title2{
+  font-size: 5.5rem; 
+  margin-top: 0%;
+  color:#aa852b; 
+  border-bottom: 3px solid #aa852b; 
+  width: 90%; 
+  margin-bottom: 0;
+}
+
 .main-content{
     width: 90%;
     margin-top: 3vh;
@@ -91,7 +100,7 @@ a:active{ color: black }
 .messenger-list{animation: fadein 2s;}
 .drawer{
   animation-name: slideInLeft;
-  animation-duration: 1s;
+  animation-duration: .75s;
 }
 
 .perfect-scrollbar{animation: fadein 1s;}
@@ -143,14 +152,21 @@ a:active{ color: black }
 
   .big-title{
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 5rem;
     width: 100%;
     line-height: 80%;
   }
 
   .profile-big-title{
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 5rem;
+    width: 100%;
+    line-height: 80%;
+  }
+
+  .profile-big-title2{
+    text-align: center;
+    font-size: 4.5rem;
     width: 100%;
     line-height: 80%;
   }
@@ -158,11 +174,12 @@ a:active{ color: black }
   .main-content-subtitle{
     text-align: center;
     margin-bottom: 0;
+    font-size: 1.2rem;
   }
 
   .main-content{width: 100%}
 
-  .global-style-component{padding-top: 10vh;}
+  .global-style-component{padding-top: 5vh;}
 
   .main-quote{text-align: center;}
 
@@ -247,7 +264,31 @@ a:active{ color: black }
     width: 90%;
     text-align: center;
   }
+  
   .bottom-container ul{width: 100%;}
+
+  .modal-story-container{
+    display: flex;
+    background-color: white; 
+    position: absolute;
+    height: 100vh;
+    top: 50px;
+    flex-flow: column;
+    justify-content: flex-start;
+    animation: slideInUp .75s;
+    padding-right: 5%;
+    overflow: scroll;
+  }
+
+  @keyframes slideInUp {
+    from {
+      top: 2000px;
+    }
+  
+    to {
+      top: 50px;
+    }
+  }
   
 }
 
@@ -275,6 +316,18 @@ a:active{ color: black }
   .icon-container{
     width: 100%;
     margin-top: 2vh;
+  }
+
+  .modal-masterpiece-container{
+    background-color: white; 
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: first baseline;
+    animation: slideInUp .75s;
+    padding-right: 5%;
+    overflow: scroll;
   }
 }
 
