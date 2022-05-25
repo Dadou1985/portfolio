@@ -95,11 +95,11 @@ const Projet = ({language}) => {
                 <FaVideo style={{borderBottom: video ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(true, false)} />
                 <FaInfoCircle style={{borderBottom: text ? "1px solid black" : "none"}} className="project-icon" onClick={() => handleTabActivation(false, true)} />
               </div>
-                <p>Etant moi-même issu du milieu hôtelier, j'ai créé une solution digitale permettant de simplifier et modernisez la gestion d'un hôtel.
+                <p>Etant moi-même issu du milieu hôtelier, j'ai créé une solution digitale permettant de simplifier et moderniser la gestion d'un hôtel.
                   <br/>Le produit se compose d'une application web orientée collaborateur et d'une application mobile orientée client.
-                  <br/>Cela fait près de 2 ans que travaille sur ce que je considère être mon projet chef d'oeuvre. 
+                  <br/>Cela fait près de 2 ans que je travaille sur ce que je considère être mon projet chef d'oeuvre. 
                   <br/>Je l'ai codé de A à Z en <i>full-stack</i>,
-                  usant de toute les connaissance et compétences que j'ai pu acquérir au cours de mes différentes expériences professionnelles.
+                  usant de toutes les connaissances et compétences que j'ai pu acquérir au cours de mes différentes expériences professionnelles.
                   <br/><br/>Le côté <i>front</i> a été principalement développé avec Gatsby.js {`(un framework React)`} pour l'application web et Expo {`React-Native`} pour l'application mobile.
                   <br/>Le côté <i>back</i> a été développé sur le Back-end-As-A-Service de Google {`(Firebase)`}.
                   <br/><br/>Pour plus de détails sur le projet, rendez-vous sur le site officiel de <a href='https://mysweethotel.com/' target='_blank' rel="noreferrer" style={{color:"#aa852b"}}>My Sweet Hotel</a>.

@@ -129,13 +129,13 @@ const Parcours = ({language}) => {
                             <br/>Quoi, tu ne me crois pas ?
                             <br/>Très bien ! Laisse-moi te prouver que je ne raconte pas des histoires.
                             <br/>Je vais utiliser mes pouvoirs pour lire dans tes pensées. Ferme les yeux, ne triche pas !
-                            <br/>Maintenant, par le pouvoir de ma <i>geekance</i>, je devine que tu êtes venu ici à la 
+                            <br/>Maintenant, par le pouvoir de ma <i>geekance</i>, je devine que tu es venu ici à la 
                             recherche d'une personne capable de donner vie à tes idées et projets en quelques lignes de codes.                        
                             <br/>BOOM ! Je te l'avais dit que j'étais incroyable et ça c'est juste un échantillon de mon potentiel.
                             <br/>Pas de panique ! Tu es venu au bonne endroit !
                         </p>
                         <div className='bottom-container'>
-                            <p>Jette un rapide coup d'oeil dans ma boîte à outils</p>
+                            <p>Jette un rapide coup d'oeil à ma boîte à outils</p>
                             <ul>
                                 <li><DiReact style={{fontSize: "3rem"}} /></li>
                                 <li><SiExpo style={{fontSize: "3rem"}} /></li>
