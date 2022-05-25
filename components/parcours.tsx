@@ -10,7 +10,7 @@ import "react-perfect-scrollbar/dist/css/styles.css";
 const Parcours = ({language}) => {
     const [fullText, setFullText] = useState(false)
     const downloadCv = () => {
-        saveAs("https://i.postimg.cc/QCrv9spm/CV-David-Simba-2022.png")
+        saveAs("https://i.postimg.cc/9Mbq6zY5/CV.png")
     }
 
     const windowSize = window.innerWidth
@@ -25,7 +25,7 @@ const Parcours = ({language}) => {
                     <h2 className='main-content-subtitle'>Allow me to introduce myself</h2>
                     {windowSize < 480 ? <div style={{overflow: "scroll"}}>
                         {fullText ? <div className='modal-story-container'>
-                        <PerfectScrollbar component='div' style={{maxHeight: "100vh"}}>
+                        <PerfectScrollbar>
                             <h2 className='main-content-subtitle'>Allow me to introduce myself</h2>
                             <p>Hi, my name is David SIMBA and I have got super powers but... let's keep it just between me and you, ok !
                                 <br/>What, you don't believe me ?
@@ -51,6 +51,7 @@ const Parcours = ({language}) => {
                                 <p>And for more details, you can download my resume by clicking on the button below</p>
                                 <FaFileDownload className="downloadIcon" onClick={downloadCv} />
                                 <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => setFullText(false)}>Show less</a></p>
+                                <br/><br/><br/><br/> 
                             </div>
                         </PerfectScrollbar>
                         </div> : <p style={{width: "90%", textAlign: "end"}}><a href="#" onClick={() => setFullText(true)}>Read more</a></p>}
@@ -119,6 +120,7 @@ const Parcours = ({language}) => {
                                 <p>Pour plus de détails, tu peux télécharger mon CV en cliquant sur le bouton ci-dessous</p>
                                 <FaFileDownload className="downloadIcon" onClick={downloadCv} />
                                 <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => setFullText(false)}>Lire moins</a></p>
+                                <br/><br/><br/><br/> 
                             </div>
                             </PerfectScrollbar>
                         </div> : <p style={{width: "90%", textAlign: "end"}}><a href="#" onClick={() => setFullText(true)}>Lire plus</a></p>}

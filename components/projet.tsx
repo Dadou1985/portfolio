@@ -54,6 +54,7 @@ const Projet = ({language}) => {
                   <br/>The back-end side was developed threw the Google's Back-end-As-A-Service {`(Firebase)`}.
                   <br/><br/>For more details on this project, <a href='https://mysweethotel.com/' target='_blank' rel="noreferrer">visit the website</a>.
                   <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => handleTabActivation(true, false)}>Close</a></p>
+                  <br/><br/><br/><br/> 
                 </p>
                 </ScrollBar>
               </div> : <div style={{display: text ? "flex" : "none"}}>
@@ -102,7 +103,8 @@ const Projet = ({language}) => {
                   <br/><br/>Le côté <i>front</i> a été principalement développé avec Gatsby.js {`(un framework React)`} pour l'application web et Expo {`React-Native`} pour l'application mobile.
                   <br/>Le côté <i>back</i> a été développé sur le Back-end-As-A-Service de Google {`(Firebase)`}.
                   <br/><br/>Pour plus de détails sur le projet, rendez-vous sur le site officiel de <a href='https://mysweethotel.com/' target='_blank' rel="noreferrer" style={{color:"#aa852b"}}>My Sweet Hotel</a>.
-                  <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => handleTabActivation(true, false)}>Fermer</a></p>              
+                  <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => handleTabActivation(true, false)}>Fermer</a></p>  
+                  <br/><br/><br/><br/>          
                 </p>  
                 </ScrollBar>
               </div> : <div style={{display: text ? "flex" : "none"}}>
