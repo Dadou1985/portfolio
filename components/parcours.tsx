@@ -5,6 +5,7 @@ import { SiExpo, SiRedux, SiTypescript, SiFirebase } from 'react-icons/si'
 import { FaNodeJs, FaFileDownload } from 'react-icons/fa'
 import { saveAs } from 'file-saver'
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import "react-perfect-scrollbar/dist/css/styles.css";
 
 const Parcours = ({language}) => {
     const [fullText, setFullText] = useState(false)
@@ -24,7 +25,7 @@ const Parcours = ({language}) => {
                     <h2 className='main-content-subtitle'>Allow me to introduce myself</h2>
                     {windowSize < 480 ? <div style={{overflow: "scroll"}}>
                         {fullText ? <div className='modal-story-container'>
-                        <PerfectScrollbar style={{maxHeight: "100vh"}}>
+                        <PerfectScrollbar component='div' style={{maxHeight: "100vh"}}>
                             <h2 className='main-content-subtitle'>Allow me to introduce myself</h2>
                             <p>Hi, my name is David SIMBA and I have got super powers but... let's keep it just between me and you, ok !
                                 <br/>What, you don't believe me ?
@@ -49,8 +50,8 @@ const Parcours = ({language}) => {
                             <div className='bottom-container'>
                                 <p>And for more details, you can download my resume by clicking on the button below</p>
                                 <FaFileDownload className="downloadIcon" onClick={downloadCv} />
+                                <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => setFullText(false)}>Show less</a></p>
                             </div>
-                            <p style={{width: "90%", textAlign: "end"}}><a href='#' onClick={() => setFullText(false)}>Show less</a></p>
                         </PerfectScrollbar>
                         </div> : <p style={{width: "90%", textAlign: "end"}}><a href="#" onClick={() => setFullText(true)}>Read more</a></p>}
                     </div> : <div>
