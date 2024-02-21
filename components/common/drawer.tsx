@@ -10,6 +10,7 @@ import {
     DrawerCloseButton,
     useDisclosure } from '@chakra-ui/react'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import Link from 'next/link'
 
 const DrawerModal = ({child, handleNavigate, language}) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -26,7 +27,7 @@ const DrawerModal = ({child, handleNavigate, language}) => {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+            <DrawerHeader>Menu</DrawerHeader>
   
             <DrawerBody>
                 <ul style={{
@@ -34,10 +35,10 @@ const DrawerModal = ({child, handleNavigate, language}) => {
                   flexFlow: "column",
                   listStyleType: "none"
                 }}>
-                    <a href="#" className="nav-item" style={{borderBottom: child === "profil" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("profil")}>{language === "en" ? "The pitch": "Le Pitch"}</li></a>
-                    <a href="#" className="nav-item" style={{borderBottom: child === "parcours" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("parcours")}>{language === "en" ? "The Geek": "Le Geek"}</li></a>
-                    <a href="#" className="nav-item" style={{borderBottom: child === "projet" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("projet")}>{language === "en" ? "The Code": "Le Code"}</li></a>
-                    <a href="#" className="nav-item" style={{borderBottom: child === "contact" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("contact")}>Contact</li></a>
+                    <Link href="#" className="nav-item" style={{borderBottom: child === "profil" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("profil")}>{language === "en" ? "The pitch": "Le Pitch"}</li></Link>
+                    <Link href="#" className="nav-item" style={{borderBottom: child === "parcours" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("parcours")}>{language === "en" ? "The Geek": "Le Geek"}</li></Link>
+                    <Link href="#" className="nav-item" style={{borderBottom: child === "projet" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("projet")}>{language === "en" ? "The Code": "Le Code"}</li></Link>
+                    <Link href="#" className="nav-item" style={{borderBottom: child === "contact" ? "2px solid #aa852b" : "none"}}><li onClick={() => handleNavigate("contact")}>Contact</li></Link>
                 </ul>
             </DrawerBody>
             <DrawerFooter>

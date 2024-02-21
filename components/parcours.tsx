@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, {useState} from 'react'
 import { DiReact } from 'react-icons/di'
-import { SiExpo, SiRedux, SiTypescript, SiFirebase } from 'react-icons/si'
+import { SiExpo, SiNextdotjs, SiTypescript, SiFirebase } from 'react-icons/si'
 import { FaNodeJs, FaFileDownload } from 'react-icons/fa'
 import { saveAs } from 'file-saver'
 import PerfectScrollbar from 'react-perfect-scrollbar'
@@ -41,7 +41,7 @@ const Parcours = ({language}) => {
                                 <ul>
                                     <li><DiReact style={{fontSize: "2.5rem"}} /></li>
                                     <li><SiExpo style={{fontSize: "2.5rem"}} /></li>
-                                    <li><SiRedux style={{fontSize: "2.5rem"}} /></li>
+                                    <li><SiNextdotjs style={{fontSize: "2.5rem"}} /></li>
                                     <li><SiTypescript style={{fontSize: "2.5rem"}} /></li>
                                     <li><FaNodeJs style={{fontSize: "2.5rem"}} /></li>
                                     <li><SiFirebase style={{fontSize: "2.5rem"}} /></li>
@@ -70,7 +70,7 @@ const Parcours = ({language}) => {
                                 <ul>
                                     <li><DiReact style={{fontSize: "3rem"}} /></li>
                                     <li><SiExpo style={{fontSize: "3rem"}} /></li>
-                                    <li><SiRedux style={{fontSize: "3rem"}} /></li>
+                                    <li><SiNextdotjs style={{fontSize: "3rem"}} /></li>
                                     <li><SiTypescript style={{fontSize: "3rem"}} /></li>
                                     <li><FaNodeJs style={{fontSize: "3rem"}} /></li>
                                     <li><SiFirebase style={{fontSize: "3rem"}} /></li>
@@ -110,7 +110,7 @@ const Parcours = ({language}) => {
                                 <ul>
                                     <li><DiReact style={{fontSize: "3rem"}} /></li>
                                     <li><SiExpo style={{fontSize: "3rem"}} /></li>
-                                    <li><SiRedux style={{fontSize: "3rem"}} /></li>
+                                    <li><SiNextdotjs style={{fontSize: "3rem"}} /></li>
                                     <li><SiTypescript style={{fontSize: "3rem"}} /></li>
                                     <li><FaNodeJs style={{fontSize: "3rem"}} /></li>
                                     <li><SiFirebase style={{fontSize: "3rem"}} /></li>
@@ -139,7 +139,7 @@ const Parcours = ({language}) => {
                             <ul>
                                 <li><DiReact style={{fontSize: "3rem"}} /></li>
                                 <li><SiExpo style={{fontSize: "3rem"}} /></li>
-                                <li><SiRedux style={{fontSize: "3rem"}} /></li>
+                                <li><SiNextdotjs style={{fontSize: "3rem"}} /></li>
                                 <li><SiTypescript style={{fontSize: "3rem"}} /></li>
                                 <li><FaNodeJs style={{fontSize: "3rem"}} /></li>
                                 <li><SiFirebase style={{fontSize: "3rem"}} /></li>
