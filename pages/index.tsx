@@ -75,7 +75,7 @@ const Index = () => {
         <div style={{
           position: "absolute",
           width: "50%",
-          height: "100vh",
+          height: "100dvh",
           left: "0%",
           backgroundColor: "whitesmoke",
           zIndex: "10",

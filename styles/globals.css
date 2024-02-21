@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body{
+  position:fixed;
   overflow: hidden;
   padding: 0%;
   margin: 0%;
@@ -135,7 +136,7 @@ a:active{ color: black }
 
 @media screen and (max-width: 480px) {
   .global-container{
-    width: 100vw;
+    width: 100dvw;
     height: 100dvh;
     background-color: white;
     background-position-y: bottom;
