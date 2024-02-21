@@ -280,7 +280,7 @@ a:active{ color: black }
     flex-flow: column;
     justify-content: flex-start;
     animation: slideInUp .75s;
-    padding-right: 5%;
+    padding-right: 1%;
     padding-bottom: 5svh;
     overflow: scroll;
   }
@@ -326,12 +326,13 @@ a:active{ color: black }
   .modal-masterpiece-container{
     background-color: white; 
     position: absolute;
+    height: 100svh;
     top: 50px;
     display: flex;
     flex-flow: column;
     justify-content: first baseline;
     animation: slideInUp .75s;
-    padding-right: 5%;
+    padding-right: 1%;
     overflow: scroll;
     padding-bottom: 5svh;
   }
