@@ -275,12 +275,13 @@ a:active{ color: black }
     display: flex;
     background-color: white; 
     position: absolute;
-    height: 100vh;
+    height: 100svh;
     top: 50px;
     flex-flow: column;
     justify-content: flex-start;
     animation: slideInUp .75s;
     padding-right: 5%;
+    padding-bottom: 5svh;
     overflow: scroll;
   }
 
@@ -332,6 +333,7 @@ a:active{ color: black }
     animation: slideInUp .75s;
     padding-right: 5%;
     overflow: scroll;
+    padding-bottom: 5svh;
   }
 }
 
